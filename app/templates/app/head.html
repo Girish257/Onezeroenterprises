@@ -1,0 +1,65 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #344955; ">
+        <div class="container-fluid">
+        <div style="display: flex" class="mainpage" onclick="main()">
+          <img src="{% static 'app/logo.jpg' %}" alt="My image" style="height: 70px; width: 70px; margin: 10px; border-radius: 15px;"/>
+          <div class="g" style="margin-top: 3px;">
+            <a class="navbar-brand brand" style="color: white; font-size:xx-large; margin-top: 10px;" href="#">ONE ZERO ENTERPRISES</a>
+            <p class="top1" style="padding-left: 120px; color: rgb(186, 156, 119); font-size:15px; ">
+              Bringing Mineral At Their Finest
+            </p>
+          </div>
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse two" id="navbarNav" style="background-color: #4A6572; width: 45%;">
+            <ul class="navbar-nav" style="padding-left: 50px;">
+              <li class="nav-item">
+                <a class="nav-link active top" aria-current="page" href="/" style="font-size: 16px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link top"  href="/#productpage" style="font-size: 16px;">Products</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link top"  href="{% static 'app\Onezeroenterprises.pdf' %}" target="_blank" style="font-size: 16px;">Brochers</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link top" href="{% url 'about' %}" style="font-size: 16px;">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link top"  href="{% url 'contact' %}" style="font-size: 16px;">Contact US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+
+
+<script>
+  function main(){
+    console.log("Hellloooo")
+    onclick = document.location.href="/";
+}
+</script>
+
+</body>
+
+
+
+</html>
+
