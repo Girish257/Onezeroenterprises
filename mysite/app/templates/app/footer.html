@@ -29,6 +29,17 @@
   color: #fff;
 }
 
+@media only screen and (min-width: 760px) and (max-width: 1030px) {
+  .test{
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+
+}
+.top1{
+  padding-left: 0px !important;
+}
+}
+
 @media (max-width: 500px){
     .about{
       display: block !important;
@@ -36,17 +47,39 @@
     /* .serve{
       width: 100%;
     } */
+    .brandlogo{
+      margin: 5px !important;
+    }
+    .one{
+      display: block !important;
+      width: 115%;
+    }
+    .slider{
+      margin-left: 0rem !important;
+      align-items: center !important;
+    }
+    .slideimg{
+      margin-left: 0rem !important;
+      height: 14rem !important;
+      width: 19rem !important;
+    }
+    .imgcompany{
+      width: 11rem !important;
+      margin: 0 !important;
+      margin-top: 10px !important;
+    }
     .brand{
-      font-size: x-large !important;
+      font-size: large !important;
     }
     .top1{
-      padding-left: 50px !important;
+      padding-left: 0px !important;
     }
     .test{
+      width: 21rem !important;
      display: grid !important;
      grid-template-columns: repeat(1, 1fr) !important;
      align-items: center !important;
-     padding-left: 31px !important;
+     padding-left: 5px !important;
      padding-top: 19px !important;
     }
     .enquiry{
@@ -54,29 +87,31 @@
       /* margin-bottom: 5rem !important; */
     }
     .testing{
-      width: 21rem !important;
+      width: 20rem !important;
     }
     .industry{
+      width: 20rem !important;
       display: grid !important; 
       grid-template-columns: repeat(2, 1fr) !important; 
     }
     .box{
-      width: 10rem !important;
+      width: 9.5rem !important;
+      height: 20rem !important;
     }
     .box-img{
-      width: 9rem !important;
+      width: 8.5rem !important;
     }
     .box-ptag{
-      width: 11rem !important;
+      width: 9rem !important;
     }
     .ek{
-      padding-left: 5% !important;
+      padding-left: 0% !important;
     }
     .a{
       width: 6rem;
     }
     .b{
-      width: 10rem !important;
+      width: 9rem !important;
     }
     .c{
       width: 9rem;
@@ -85,13 +120,13 @@
       object-fit: cover;
     }
     .d{
-      height: 25rem !important;
+      height: 27rem !important;
     }
     .e{
-      height: 20rem !important;
+      height: 22rem !important;
     }
     .f{
-      height: 17rem !important;
+      height: 19rem !important;
     }
     .g{
       margin-top: 12px !important;
@@ -100,14 +135,15 @@
       padding-left: 5px !important;
     }
     .i{
-      height: 21rem !important;
+      height: 24rem !important;
     }
     .j{
-      height: 110px !important;
+      height: 130px !important;
       background-color: #344955 !important;
     }
     .k{
-      width: 19rem;
+      margin-top: 2rem !important;
+      width: 28rem;
     }
     .l{
       margin-top: 5rem;
@@ -117,6 +153,10 @@
     }
     .n{
       margin-left: 50px !important;
+    }
+    .imgswach{
+      height: 30% !important;
+      width: 70% !important;
     }
   }
 
@@ -228,9 +268,9 @@
   </div>
   <div class="col-md-6 mb-md-0 mb-6" style="padding-left: 15%;">
     
-      <img src="{% static 'images/india1.jpg' %}" alt="My image" style="height: 40%; width: 90%; margin-bottom: 5%; border: none;"/>
+      <img class="imgswach" src="{% static 'images/india1.jpg' %}" alt="My image" style="height: 40%; width: 90%; margin-bottom: 5%; border: none;"/>
 
-      <img src="{% static 'images/make.png' %}" alt="My image" style="height: 40%; width: 90%; border:  none;"/>
+      <img class="imgswach" src="{% static 'images/make.png' %}" alt="My image" style="height: 40%; width: 90%; border:  none;"/>
     
   </div>
   
